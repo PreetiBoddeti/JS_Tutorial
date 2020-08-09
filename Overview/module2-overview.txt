@@ -1,0 +1,3 @@
+How to configure IDE
+MDN web docs for help
+chrome debugging and IDE debugging

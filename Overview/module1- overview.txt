@@ -1,0 +1,30 @@
+module-1:(Overview)
+
+variables and constants:
+	variable declaration
+	constant declaration
+	initialization - assignment
+operators:
+	assignment
+	arithmetic(+-*/%)
+	shorthand(+=, -=, *= , /=)
+	increment and decrement (++, --)
+functions:
+	function call
+	function definition
+	when the function is caled upon clicked - eventListener
+	parameters in functions
+Strings - "", '' ,``
+Numbers- perform operations on them
+arrays:
+	declararation.
+	push an element into an earray
+	show them in logs - > console.log(arrayName)
+objects:
+	declaration
+	collection of objects in an array
+import scripts 
+	inline scripts
+	external scripts
+		-> defer
+		-> async

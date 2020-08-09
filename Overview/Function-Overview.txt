@@ -1,0 +1,66 @@
+Functions - lines of code that can be used multiple times are maintained in blocks
+	->variable and constants in functions are accesible in block level
+	->have parameters and return values
+	->called directly and indirectly
+
+Parameters Vs Arguments
+ values passed in function call -> arguments
+ values passed in function definition->parameters
+
+
+Functions Vs Methods
+
+methods are nothing but functions
+The functions stored as values in the objects are termed as methods
+
+Functions are objects
+Example: console.dir(funcName)
+		o/p->f funcName()
+			prop1:val1
+			prop2:val2	//object with pre-configured properties
+
+
+Function Expressions and Function Declarations
+
+Example: function funcName(){.....}  //function declaration
+
+	btn.addEventListener('click',funcName) //function expression
+
+
+Note: The only difference in expression and declaration is "HOISTING"
+
+
+Anonymous Function- > function without a name
+
+Arrwow Functions: Used a one line code if small calculations are performed
+	Syntax:
+		const varName=()=>{....}     //no arguments
+		const varName=arg=>{....}    //with one argument
+		const varName=(a,b)=>a+b     //multiple arguments, can omit { } and returns value t the variable
+		const varNme=(a,b)=>{....
+				.......}	//can have { }
+
+Default Arguments:
+If the arguments are empty and not passed -> JS executes the function taking the argument as undefined
+To avoid such cases the default arguments are to be mentioned
+
+Rest Parameters:
+Syntax: ...Parameter    //gets all the parameters passed
+Note: Should alwys be passed at the end of the function
+
+Example:const sumUp=(a,...numbers)=>{....}
+	sumUp(1,2,3,4,45,5,6,67,67,67)      //a refers to 1 and the rest are taken as and array of numbers
+
+	const sumUp=(...numbers,a)=>{....}
+	sumUp(1,2,3,4,5,6,76678,789899,089)  //all the numbers passed are taken as an array and the parameter a is left undefined
+
+nested functions, call back functions, bind functions
+
+function within a function
+
+the functions are passed a s a paraeter to the function call and are called within the called function
+
+any additional text to be added to the function can be binded to the property of that object using bind function
+bind(this,'additional text to be binded with the property of the respective object')
+
+					

@@ -1,0 +1,70 @@
+module4:
+ES5 Vs ES6
+ECMA Scripts
+
+var let and const
+	let and const-block scope
+	var-function and global scope
+
+	Hoisting-loads the 'variable declaration' first before printing the variable at the console
+
+			Example:console.log(name)
+				 var name='Preeti'
+		if the variable is declared with var shows as undefined as te variable is not assigned
+		
+		if the variable is declared with let it displays error as the value is not assigned.
+
+	Strict mode:
+			Example:  name='preeti'
+				  console.log(name)
+			output: displays the name as the JS engine recognizes that the variable is declared with var.
+				In order to avoid such scenarios we can mention strict mode that does not display value until the variable is properly declared.
+				Example:
+					'strict mode';
+					name='max'
+					console.log(name) //does not display the name in console
+
+CODE Parse and Compliation-> Browser-> JS Engine
+					->Interpreter- parses/reads the JS CODE and converts the Js script to the Byte Code
+					->Compiler - Compiles the code, Converts the byte to the machine code and sends to the machine
+
+How the code is executed-> JS Engine
+				-> HEAP - THE variavle, functions,arrays,objects a.... are stored in the system memory
+				->STACK - It manages the execution flow of the script. pushed and popped from the stack
+						The currently running block of code is always on top of the stack. If the code execution, popped ut of stack.
+
+
+Primitive and Reference Values:
+	->Primitive- strings,numbers,booleans,null,undefined,symbols
+			->Typically, stored in STACK area
+			->assigned as values to the newly created variables
+			Example: let name='max'
+				let newName=name
+				name='preeti'
+				console.log(name) // displays preeti
+				console.log(neName) //displays max
+
+				Note: The name(Copy of this variable) is assigned to the newly created variable newName
+
+	->Reference - arrays and objects
+			-> stored in HEAP area
+			->assigned as reference the new variables
+
+			Example:
+				let sport=['cricket']
+				let newSport=sport
+				sport.push('footbal')
+				console.log(sport) //displays both the sports
+				console.log(newSport)//displays both the sports.
+			Note: Both the arrays refer to the same address as the refrenece of the array sport is assigned to newly created array.
+	->Note: When the reference variables are declared as constants, The data in the variable can be changed but the reference of the variable cannot be changed.
+
+Garbage Collection -> The JS Engine checks all the variabeles in the memory and checks if any of the variables have no reference.
+			If no referenced variables exists then they are removed from the HEap area.
+
+			Memory leaks-> unused objects that still hold referenecs.
+
+
+
+	
+
